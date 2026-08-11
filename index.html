@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recipes for Desire | A workshop for partners to share desires</title>
+<meta name="description" content="A two-hour, touch-free workshop for partners to share desires and cook up intimate fantasies. Available for tantra festivals, retreats and venues.">
+
+<!-- Keeps the page out of search results. Remove this line only when you want to be found. -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Link previews when you paste the URL into an email or an application form -->
+<meta property="og:title" content="Recipes for Desire, the workshop">
+<meta property="og:description" content="A two-hour, touch-free workshop for partners to share desires and cook up intimate fantasies.">
+<meta property="og:image" content="https://recipesfordesire.com/images/hero-hands-cards.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://recipesfordesire.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,600;0,700;1,9..144,400&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   RECIPES FOR DESIRE, workshop page
+   All colours and fonts are here at the top. A designer can
+   change the whole site from this one block.
+   ============================================================ */
+:root{
+  --paper:#F7F2E9;
+  --paper-deep:#EFE5D3;
+  --ink:#2E2823;
+  --ink-soft:#5B5148;
+  --plum:#3B3340;
+  --plum-deep:#2A2430;
+  --green:#4E8A63;
+  --amber:#D19A3D;
+  --navy:#2C3E56;
+  --rose:#C25563;
+  --rule:rgba(46,40,35,.16);
+
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Work Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+
+  --measure:34rem;
+  --pad:clamp(1.25rem,5vw,2.5rem);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-weight:400;font-size:1.0625rem;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--paper);padding:.75rem 1rem;z-index:99}
+.skip:focus{left:0}
+
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+
+/* ---------- shared layout ---------- */
+.wrap{width:min(64rem,100% - var(--pad)*2);margin-inline:auto}
+.narrow{max-width:var(--measure)}
+.section{padding:clamp(3.5rem,8vw,6rem) 0}
+.section--deep{background:var(--paper-deep)}
+.section--dark{background:var(--plum);color:#EDE6DC}
+.section--dark .eyebrow{color:var(--amber)}
+.section--dark h2{color:#FBF6EE}
+
+/* ---------- type ---------- */
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.12;margin:0 0 .6em;letter-spacing:-.01em}
+h2{font-size:clamp(1.75rem,4.2vw,2.6rem)}
+h3{font-size:1.2rem;letter-spacing:.005em}
+p{margin:0 0 1.1rem;max-width:var(--measure)}
+.section--dark p{color:#DCD3C8}
+.lede{font-size:clamp(1.1rem,2.4vw,1.3rem);line-height:1.55;color:var(--ink-soft)}
+
+.eyebrow{
+  font-family:var(--body);font-size:.72rem;font-weight:600;
+  letter-spacing:.19em;text-transform:uppercase;color:var(--ink-soft);
+  display:flex;align-items:center;gap:.6rem;margin:0 0 1.1rem;
+}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--rule);max-width:6rem}
+.section--dark .eyebrow::after{background:rgba(237,230,220,.28)}
+
+.chili{width:1.15em;height:1.15em;flex:none;fill:currentColor;opacity:.85}
+
+/* ============================================================
+   HERO. The signature: the page opens as one of the game's own
+   cards, scaled up. Coloured header bar, white body, rounded
+   corners, chili mark in the corner, exactly like the deck.
+   ============================================================ */
+.hero{position:relative;background:var(--plum-deep);overflow:hidden}
+.hero__img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:.5;filter:saturate(.92);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(42,36,48,.55),rgba(42,36,48,.8));
+}
+.hero__inner{position:relative;z-index:2;padding:clamp(3.5rem,9vw,7rem) 0}
+
+.card{
+  background:#FDFBF6;border-radius:18px;overflow:hidden;
+  box-shadow:0 24px 60px -24px rgba(20,14,26,.55),0 2px 0 rgba(255,255,255,.5) inset;
+}
+.card__bar{
+  padding:.85rem 1.6rem;display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;color:#fff;
+}
+.card__kind{
+  font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+}
+.card__body{padding:clamp(1.6rem,4.5vw,2.75rem)}
+
+.hero .card{max-width:44rem}
+.hero .card__bar{background:var(--green)}
+.hero h1{
+  font-size:clamp(2.1rem,6.4vw,3.6rem);margin-bottom:.35em;
+  letter-spacing:-.02em;
+}
+.hero__sub{
+  font-family:var(--display);font-style:italic;font-size:clamp(1.05rem,2.6vw,1.3rem);
+  color:var(--ink-soft);max-width:30rem;margin-bottom:1.6rem;
+}
+.hero__meta{
+  display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.75rem;padding:0;list-style:none;
+}
+.hero__meta li{
+  font-size:.78rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
+  border:1px solid var(--rule);border-radius:999px;padding:.35rem .85rem;color:var(--ink-soft);
+}
+
+.btn{
+  display:inline-block;background:var(--ink);color:var(--paper);
+  font-family:var(--body);font-size:.95rem;font-weight:500;letter-spacing:.03em;
+  padding:.9rem 1.6rem;border-radius:999px;text-decoration:none;border:0;cursor:pointer;
+  transition:background .18s ease,transform .18s ease;
+}
+.btn:hover{background:var(--green);transform:translateY(-1px)}
+
+/* ---------- sticky nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:40;background:rgba(247,242,233,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);
+}
+.nav__inner{display:flex;gap:clamp(.75rem,3vw,2rem);align-items:center;
+  padding:.7rem 0;overflow-x:auto;scrollbar-width:none}
+.nav__inner::-webkit-scrollbar{display:none}
+.nav a{
+  white-space:nowrap;text-decoration:none;font-size:.82rem;font-weight:500;
+  letter-spacing:.04em;color:var(--ink-soft);padding:.2rem 0;border-bottom:2px solid transparent;
+}
+.nav a:hover{color:var(--ink);border-bottom-color:var(--amber)}
+.nav a.nav__brand{font-family:var(--display);font-size:.95rem;font-weight:600;color:var(--ink);margin-right:auto}
+:target,[id]{scroll-margin-top:5rem}
+
+/* ---------- lists ---------- */
+.takeaways{list-style:none;padding:0;margin:0;display:grid;gap:1.4rem}
+@media(min-width:52rem){.takeaways{grid-template-columns:repeat(3,1fr);gap:2rem}}
+.takeaways li{border-top:2px solid var(--green);padding-top:1rem}
+.takeaways strong{display:block;font-family:var(--display);font-size:1.1rem;font-weight:600;margin-bottom:.35rem}
+.takeaways p{margin:0;font-size:.97rem;color:var(--ink-soft)}
+
+.plain{list-style:none;padding:0;margin:0 0 1.1rem;max-width:var(--measure)}
+.plain li{padding-left:1.5rem;position:relative;margin-bottom:.6rem}
+.plain li::before{
+  content:"";position:absolute;left:0;top:.62em;width:.5rem;height:.5rem;
+  border-radius:50%;background:var(--amber);
+}
+.section--dark .plain li::before{background:var(--amber)}
+
+/* ---------- media ---------- */
+figure{margin:0}
+.figure-wide img{border-radius:14px}
+.figure-wide figcaption{font-size:.82rem;color:var(--ink-soft);margin-top:.7rem;font-style:italic}
+.split{display:grid;gap:2.5rem;align-items:start}
+@media(min-width:52rem){.split{grid-template-columns:1.05fr .95fr;gap:3.5rem}}
+
+/* ---------- quotes ---------- */
+.quotes{display:grid;gap:1.6rem}
+@media(min-width:52rem){.quotes{grid-template-columns:1fr 1fr;gap:2rem}}
+blockquote{
+  margin:0;background:#FDFBF6;border-radius:14px;padding:1.75rem;
+  border-left:4px solid var(--rose);
+}
+blockquote p{font-family:var(--display);font-size:1.06rem;line-height:1.5;margin-bottom:.9rem}
+blockquote cite{font-style:normal;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* ---------- bios ---------- */
+.bios{display:grid;gap:2.25rem;margin-top:.5rem}
+.bio h3{margin-bottom:.4rem}
+.bio__role{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin:0 0 .8rem}
+.bio p{font-size:.98rem}
+
+/* ---------- form ---------- */
+.form{max-width:34rem;margin-top:1.75rem}
+.field{margin-bottom:1.15rem}
+label{display:block;font-size:.8rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;margin-bottom:.4rem;color:#E7DFD4}
+input,textarea{
+  width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);
+  background:#FDFBF6;border:1px solid transparent;border-radius:10px;padding:.8rem .95rem;
+}
+textarea{min-height:7.5rem;resize:vertical}
+input:focus,textarea:focus{border-color:var(--amber)}
+.consent{display:flex;gap:.75rem;align-items:flex-start;margin-bottom:1.4rem}
+.consent input{width:auto;margin-top:.25rem;flex:none}
+.consent label{text-transform:none;letter-spacing:0;font-size:.9rem;font-weight:400;line-height:1.5;margin:0;color:#DCD3C8}
+.hp{position:absolute;left:-9999px}
+.form .btn{background:var(--amber);color:var(--plum-deep);font-weight:600}
+.form .btn:hover{background:#E5AE4C}
+.fineprint{font-size:.85rem;color:#B9AFA4;margin-top:1.25rem;max-width:32rem}
+
+/* ---------- footer ---------- */
+.footer{background:var(--plum-deep);color:#A79CA8;padding:2.5rem 0;font-size:.88rem}
+.footer p{max-width:none;margin:0 0 .35rem}
+.footer strong{font-family:var(--display);color:#EDE6DC;font-weight:600;letter-spacing:.01em}
+
+/* ---------- motion ---------- */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <img class="hero__img" src="images/hero-hands-cards.jpg" alt="Two hands holding three cards from the Recipes for Desire deck above a table of sorted cards">
+  <div class="hero__inner">
+    <div class="wrap">
+      <div class="card">
+        <div class="card__bar" style="background:var(--green)">
+          <span class="card__kind">The workshop</span>
+          <svg class="chili" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2c.4 2.6-.3 4.3-1.7 5.7C10.5 9.4 9 11 9 13.4c0 3.2 2.5 5.4 5.3 5.4 3.6 0 6.2-3 6.2-7.1 0-4-1.9-7.4-4.8-9.7A.9.9 0 0 0 14 2Z"/><path d="M9.2 6.1c.3 2-.2 3.3-1.3 4.4C6.6 11.8 5.4 13 5.4 14.8c0 2.4 1.9 4.1 4 4.1.4 0 .8 0 1.2-.2-2-1.2-3.2-3.3-3.2-5.7 0-2.2 1-3.9 2.2-5.3.2-.3.4-.6.5-.9a.7.7 0 0 0-.9-.7Z"/></svg>
+        </div>
+        <div class="card__body">
+          <h1>Recipes for Desire</h1>
+          <p class="hero__sub">A workshop for partners to share desires and cook up intimate fantasies.</p>
+          <ul class="hero__meta">
+            <li>Two hours</li>
+            <li>Up to ten couples</li>
+            <li>Touch-free</li>
+            <li>18+</li>
+          </ul>
+          <a class="btn" href="#enquire">Enquire about a slot</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" aria-label="Sections">
+  <div class="wrap nav__inner">
+    <a class="nav__brand" href="#top">Recipes for Desire</a>
+    <a href="#nutshell">In a nutshell</a>
+    <a href="#how">How it works</a>
+    <a href="#care">Care in the room</a>
+    <a href="#who">Who holds the room</a>
+    <a href="#practical">Practical</a>
+    <a href="#enquire">Enquire</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ============ INTRO ============ -->
+<section class="section" id="nutshell">
+  <div class="wrap">
+    <p class="eyebrow reveal">The workshop in a nutshell</p>
+    <p class="lede reveal">Most people carry a private list of intimate fantasies they would love to explore, yet never quite find the moment to say them out loud. This workshop creates that moment.</p>
+    <p class="reveal">Participants arrive with a partner, or with a flirt they are exploring the festival with. They leave with:</p>
+
+    <ul class="takeaways reveal" style="margin-top:2.25rem">
+      <li>
+        <strong>Two to four adventures</strong>
+        <p>Intimate plans they are excited to explore together, written into a small booklet to take home.</p>
+      </li>
+      <li>
+        <strong>Clearer language</strong>
+        <p>Words for expressing desires, boundaries and emotions, practised in the room and usable afterwards.</p>
+      </li>
+      <li>
+        <strong>A repeatable process</strong>
+        <p>A way of navigating Yes, Maybe and No together that keeps working long after the festival.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section section--deep" id="how">
+  <div class="wrap">
+    <p class="eyebrow reveal">How the workshop unfolds</p>
+    <h2 class="reveal">Cooking, as a way of talking about desire</h2>
+    <p class="reveal">Using playful cooking metaphors, participants imagine, negotiate and co-create intimate date ideas. These are not regular pasta-and-ketchup dates. They come with a starter, a main course and a dessert.</p>
+
+    <figure class="figure-wide reveal" style="margin:2.5rem 0">
+      <img src="images/how-it-works.jpg" alt="Four steps: remove the allergies, find the favourite ingredients, season with maybes, then cook a shared recipe" loading="lazy">
+    </figure>
+
+    <div class="split">
+      <div class="reveal">
+        <p>Each couple receives a deck of Recipes for Desire cards, one fantasy ingredient per card, and sorts them into three piles: Hell Yes, Maybe and No Thank You.</p>
+        <p>Using cards from their shared Hell Yes pile, participants cook a juicy date idea, present it to their partner, and close with a question: “Would you be willing to explore this with me?”</p>
+        <p>Their partner may say yes, add to the fantasy, respectfully decline, or answer with a maybe and discuss what might help it become a yes. The finished recipe is written into a booklet the couple takes home and can act on after the workshop.</p>
+      </div>
+      <figure class="figure-wide reveal">
+        <img src="images/table-overhead.jpg" alt="Cards sorted across a table beneath the Hell Yes, Maybe and No Thank You markers" loading="lazy">
+        <figcaption>The three piles, with the conversation scaffold printed on the Maybe marker.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARE ============ -->
+<section class="section section--dark" id="care">
+  <div class="wrap">
+    <p class="eyebrow reveal">Care in the room</p>
+    <h2 class="reveal">Nothing happens except talking</h2>
+    <div class="split">
+      <div class="reveal">
+        <p>There is no nudity, intimate touch or sexual activity during the workshop. Anyone may pause, decline, renegotiate or step away at any time.</p>
+        <p>The game framework supporting the discussions draws on boundary work, Nonviolent Communication and Authentic Relating, so the conversations stay grounded and consensual.</p>
+      </div>
+      <div class="reveal">
+        <ul class="plain">
+          <li>Removing a card is not a rejection. It is an invitation to a conversation.</li>
+          <li>A no needs no explanation.</li>
+          <li>Explore in the stretch. Land in the comfort. Stay out of panic.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTES ============ -->
+<section class="section" id="said">
+  <div class="wrap">
+    <p class="eyebrow reveal">Participants said</p>
+    <div class="quotes reveal">
+      <blockquote>
+        <p>“After years of participating in many kinds of play, saying what I want is still the hardest thing to do. This workshop gave me a simple but creative way to practice that, in a setting that felt supported and safe.”</p>
+        <cite>Workshop participant</cite>
+      </blockquote>
+      <blockquote>
+        <p>“It gave us new ideas, and new angles on things we thought we already knew about each other. We don’t usually talk about this stuff so openly.”</p>
+        <cite>Workshop participant</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHO ============ -->
+<section class="section section--deep" id="who">
+  <div class="wrap">
+    <p class="eyebrow reveal">Who holds the room</p>
+    <div class="split">
+      <div>
+        <div class="bios">
+          <div class="bio reveal">
+            <h3>Viktor Beregszászi</h3>
+            <p class="bio__role">Facilitator, game designer</p>
+            <p>Viktor combines a decade of experience in personal development and tantra with professional facilitation and learning-game design, and has taught more than 1,500 people over the years. He holds playful, brave spaces where people tap into their authentic creativity.</p>
+          </div>
+          <div class="bio reveal">
+            <h3>Rebecca Langley Jensen</h3>
+            <p class="bio__role">Co-facilitator, actor</p>
+            <p>Rebecca is an actor working with storytelling and embodiment. She has practised tantra for two years, using the learnings in her work and private life. She supports participants in crafting vivid, personal fantasies, and co-facilitates with a focus on emotional support.</p>
+          </div>
+        </div>
+      </div>
+      <figure class="figure-wide reveal">
+        <img src="images/cards-closeup.jpg" alt="A hand fanning three cards: a place, an ingredient and a main course activity" loading="lazy">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRACTICAL ============ -->
+<section class="section" id="practical">
+  <div class="wrap">
+    <p class="eyebrow reveal">Practical</p>
+    <h2 class="reveal">What we need from you</h2>
+    <div class="split" style="margin-top:2rem">
+      <div class="card reveal">
+        <div class="card__bar" style="background:var(--amber);color:var(--plum-deep)">
+          <span class="card__kind">The session</span>
+          <svg class="chili" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2c.4 2.6-.3 4.3-1.7 5.7C10.5 9.4 9 11 9 13.4c0 3.2 2.5 5.4 5.3 5.4 3.6 0 6.2-3 6.2-7.1 0-4-1.9-7.4-4.8-9.7A.9.9 0 0 0 14 2Z"/></svg>
+        </div>
+        <div class="card__body">
+          <ul class="plain" style="margin:0">
+            <li>Two hours, or ninety minutes if the programme is tight</li>
+            <li>Up to ten couples or constellations</li>
+            <li>Participants are 18 or over</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="card__bar" style="background:var(--navy)">
+          <span class="card__kind">The room</span>
+          <svg class="chili" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2c.4 2.6-.3 4.3-1.7 5.7C10.5 9.4 9 11 9 13.4c0 3.2 2.5 5.4 5.3 5.4 3.6 0 6.2-3 6.2-7.1 0-4-1.9-7.4-4.8-9.7A.9.9 0 0 0 14 2Z"/></svg>
+        </div>
+        <div class="card__body">
+          <ul class="plain" style="margin:0">
+            <li>Floor space, soft lighting</li>
+            <li>Cushions or mats</li>
+            <li>A speaker for quiet music, if one is available</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENQUIRE ============ -->
+<section class="section section--dark" id="enquire">
+  <div class="wrap">
+    <p class="eyebrow reveal">Enquire</p>
+    <h2 class="reveal">Bring the workshop to your festival</h2>
+    <p class="reveal">Tell us roughly when you are programming and we will come back to you within a few days.</p>
+
+    <div class="split">
+      <div>
+    <!-- ⚠️ REPLACE YOUR_FORM_ID with the ID from your Formspree account. See README. -->
+    <form class="form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="_subject" value="Recipes for Desire, workshop enquiry">
+      <div class="hp" aria-hidden="true"><label for="company">Leave this empty</label><input type="text" id="company" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+
+      <div class="field">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="org">Festival, venue or practice</label>
+        <input type="text" id="org" name="organisation" required>
+      </div>
+      <div class="field">
+        <label for="dates">Dates you are considering</label>
+        <input type="text" id="dates" name="dates" placeholder="October 2026, or not decided yet">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="message">Anything you want us to know</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <div class="consent">
+        <input type="checkbox" id="consent" name="consent" value="yes" required>
+        <label for="consent">I am happy for Viktor and Rebecca to store these details in order to reply to this enquiry.</label>
+      </div>
+      <button class="btn" type="submit">Send enquiry</button>
+      <p class="fineprint">We use your details only to answer this enquiry. Nothing is added to a mailing list and nothing is passed on. Write to us at any time to have them deleted. Contact: hello@recipesfordesire.com</p>
+    </form>
+      </div>
+      <figure class="figure-wide reveal">
+        <img src="images/spread-fan.jpg" alt="The full deck fanned across a garden table with the three zone markers and two Recipe Books" loading="lazy">
+      </figure>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>Recipes for Desire</strong></p>
+    <p>Viktor Beregszászi and Rebecca Langley Jensen, Copenhagen</p>
+    <p>hello@recipesfordesire.com</p>
+  </div>
+</footer>
+
+<script>
+// Gentle reveal on scroll. Skipped entirely when reduced motion is preferred.
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.reveal');
+  if(reduce || !('IntersectionObserver' in window)){
+    items.forEach(function(el){el.classList.add('in')});
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+    });
+  },{rootMargin:'0px 0px -8% 0px',threshold:.06});
+  items.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
