@@ -16,6 +16,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://recipesfordesire.com/">
 
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#3B3340">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,600;0,700;1,9..144,400&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -113,7 +118,7 @@ p{margin:0 0 1.1rem;max-width:var(--measure)}
   }
   .hero{align-items:flex-end}
 }
-.hero__rule{width:3.5rem;height:3px;background:var(--amber);margin:0 0 1.5rem;border-radius:2px}
+.hero__logo{width:clamp(4.25rem,9vw,5.5rem);height:auto;margin:0 0 1.35rem;filter:drop-shadow(0 2px 14px rgba(20,14,26,.45))}
 
 .card{
   background:#FDFBF6;border-radius:18px;overflow:hidden;
@@ -170,7 +175,8 @@ p{margin:0 0 1.1rem;max-width:var(--measure)}
   letter-spacing:.04em;color:var(--ink-soft);padding:.2rem 0;border-bottom:2px solid transparent;
 }
 .nav a:hover{color:var(--ink);border-bottom-color:var(--amber)}
-.nav a.nav__brand{font-family:var(--display);font-size:.95rem;font-weight:600;color:var(--ink);margin-right:auto}
+.nav a.nav__brand{font-family:var(--display);font-size:.95rem;font-weight:600;color:var(--ink);margin-right:auto;display:flex;align-items:center;gap:.55rem;border-bottom:0}
+.nav__brand img{width:1.6rem;height:auto;flex:none}
 :target,[id]{scroll-margin-top:5rem}
 
 /* ---------- lists ---------- */
@@ -237,6 +243,7 @@ input:focus,textarea:focus{border-color:var(--amber)}
 /* ---------- footer ---------- */
 .footer{background:var(--plum-deep);color:#A79CA8;padding:2.5rem 0;font-size:.88rem}
 .footer p{max-width:none;margin:0 0 .35rem}
+.footer__logo{width:3rem;height:auto;margin-bottom:1rem;opacity:.9}
 .footer strong{font-family:var(--display);color:#EDE6DC;font-weight:600;letter-spacing:.01em}
 
 /* ---------- motion ---------- */
@@ -259,7 +266,7 @@ input:focus,textarea:focus{border-color:var(--amber)}
   <div class="hero__inner">
     <div class="wrap">
       <div class="hero__text">
-        <div class="hero__rule"></div>
+        <img class="hero__logo" src="images/logo-light.png" alt="" width="180" height="181">
         <h1>Recipes for Desire</h1>
         <p class="hero__sub">A workshop for flirts, couples and poly constellations to share desires and cook up intimate fantasies.</p>
         <p class="hero__line">Bring the love of your life, or the love of your night.</p>
@@ -278,7 +285,7 @@ input:focus,textarea:focus{border-color:var(--amber)}
 <!-- ============ NAV ============ -->
 <nav class="nav" aria-label="Sections">
   <div class="wrap nav__inner">
-    <a class="nav__brand" href="#top">Recipes for Desire</a>
+    <a class="nav__brand" href="#top"><img src="images/logo-dark.png" alt="" width="26" height="26">Recipes for Desire</a>
     <a href="#nutshell">In a nutshell</a>
     <a href="#how">How it works</a>
     <a href="#care">Care in the room</a>
@@ -471,6 +478,7 @@ input:focus,textarea:focus{border-color:var(--amber)}
 
 <footer class="footer">
   <div class="wrap">
+    <img class="footer__logo" src="images/logo-light.png" alt="" width="52" height="52">
     <p><strong>Recipes for Desire</strong></p>
     <p>Viktor Beregszászi and Rebecca Langley Jensen, Copenhagen</p>
     <p>hello@recipesfordesire.com</p>
