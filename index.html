@@ -152,13 +152,15 @@ figure{margin:0}
 .steps strong{display:block;font-family:var(--display);font-size:1.15rem;font-weight:600;margin-bottom:.4rem;line-height:1.25}
 .steps p{margin:0;font-size:.97rem;color:var(--ink-soft)}
 .outcome{font-family:var(--display);font-size:clamp(1.15rem,2.6vw,1.4rem);line-height:1.45;margin:2.5rem 0 0;max-width:40rem}
-.infographic{margin-top:2.75rem}
-.infographic img{border-radius:16px}
+/* ---------- booking prompts between sections ---------- */
+.cta-band{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem;margin-top:2.75rem;padding:1.4rem 1.6rem;border-radius:18px;background:#FFFDF9;box-shadow:0 18px 40px -30px rgba(60,40,30,.5)}
+.cta-band p{margin:0;font-family:var(--display);font-size:1.15rem;line-height:1.35;flex:1 1 16rem}
 
 /* ---------- why it works ---------- */
 .reasons{display:grid;gap:2rem;margin-top:2rem}
 @media(min-width:56rem){.reasons{grid-template-columns:repeat(3,1fr);gap:2.25rem}}
 .reasons h3{color:var(--plum);padding-top:.9rem;border-top:2px solid var(--terracotta)}
+.reasons__icon{width:2.6rem;height:2.6rem;display:block;margin-bottom:.9rem;fill:none;stroke:var(--terracotta);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .reasons p{font-size:.98rem;color:var(--ink-soft)}
 
 /* ---------- who we are ---------- */
@@ -177,6 +179,8 @@ figure{margin:0}
 @media(min-width:52rem){.quotes{grid-template-columns:1fr 1fr;gap:2rem}}
 blockquote{margin:0;background:#FFFDF9;border-radius:16px;padding:1.75rem;border-left:4px solid var(--rose)}
 blockquote p{font-family:var(--display);font-size:1.06rem;line-height:1.5;margin-bottom:.9rem}
+.quote__who{display:flex;align-items:center;gap:.75rem}
+.avatar{width:2.6rem;height:2.6rem;flex:none;border-radius:50%}
 blockquote cite{font-style:normal;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
 
 /* ---------- organiser cards ---------- */
@@ -203,6 +207,13 @@ input:focus,textarea:focus{border-color:var(--amber)}
 .form .btn{background:var(--amber);color:var(--plum-deep);font-weight:600}
 .form .btn:hover{background:#E5AE4C}
 .fineprint{font-size:.85rem;color:#B9AFA4;margin-top:1.25rem;max-width:34rem}
+
+/* ---------- game banner ---------- */
+.game-banner{background:var(--paper-warm);border-top:1px solid var(--rule)}
+.game-banner__inner{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 1.5rem;padding:1.4rem 0}
+.game-banner__tag{font-size:.68rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:var(--terracotta);border-radius:999px;padding:.3rem .75rem}
+.game-banner p{margin:0;flex:1 1 20rem;font-size:.97rem}
+.game-banner a{font-weight:600;color:var(--plum)}
 
 /* ---------- footer ---------- */
 .footer{background:var(--plum-deep);color:#A79CA8;padding:2.5rem 0;font-size:.88rem}
@@ -297,9 +308,10 @@ input:focus,textarea:focus{border-color:var(--amber)}
 
     <p class="outcome reveal">You leave with two to four date ideas you had never thought of, and are both excited to try.</p>
 
-    <figure class="infographic reveal">
-      <img src="images/how-it-works.jpg?v=2" alt="Four steps: remove the allergies, find the favourite ingredients, season with maybes, then cook a shared recipe" loading="lazy">
-    </figure>
+    <div class="cta-band reveal">
+      <p>Want your couples to leave with recipes like these?</p>
+      <a class="btn" href="#book">Book this workshop for your festival</a>
+    </div>
   </div>
 </section>
 
@@ -310,16 +322,19 @@ input:focus,textarea:focus{border-color:var(--amber)}
     <h2 class="reveal">A clear structure lets couples speak from the heart</h2>
     <div class="reasons">
       <div class="reveal">
+        <svg class="reasons__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 27s-10-6.2-10-13.2A5.6 5.6 0 0 1 16 10a5.6 5.6 0 0 1 10 3.8C26 20.8 16 27 16 27Z"/></svg>
         <h3>Out of the head, into the senses</h3>
         <p>In tantra, presence comes first. Talking about desire usually pulls people into their heads, searching for the right words and wondering how they will land. In the game, the questions and the steps are printed on the cards. That frees couples to slow down, listen and feel.</p>
         <p>When couples describe a fantasy, we guide them to use all five senses: what they would see, hear, smell, taste and feel. A fantasy told this vividly is easy to feel into, and easy to remember.</p>
       </div>
       <div class="reveal">
+        <svg class="reasons__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 15h22v6a6 6 0 0 1-6 6H11a6 6 0 0 1-6-6Z"/><path d="M3 15h26M14 12h4"/><path d="M11 9c0-1.5 1.5-1.5 1.5-3S11 4.5 11 3M16 9c0-1.5 1.5-1.5 1.5-3S16 4.5 16 3M21 9c0-1.5 1.5-1.5 1.5-3S21 4.5 21 3"/></svg>
         <h3>Why we cook</h3>
         <p>Desire is a tender subject, and a metaphor gives it a little distance. “That ingredient is not for me” is easier to say, and to hear, than turning down a partner’s fantasy.</p>
         <p>And everyone already knows how to talk about food: allergies, favourite flavours, the dish you have always wanted to try. In the kitchen, people find their words and their imagination.</p>
       </div>
       <div class="reveal">
+        <svg class="reasons__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 14v13H5V14Z"/><path d="M10 15l5-9.5a2.2 2.2 0 0 1 4 1.4L17.6 13H25a2.5 2.5 0 0 1 2.4 3.1l-2.3 8.7A3 3 0 0 1 22.2 27H10"/></svg>
         <h3>Know your yes before the moment</h3>
         <p>In an intimate moment, the wish to please or the rush of excitement can blur a no, and some people only feel it afterwards.</p>
         <p>The game gives couples time with a fantasy before it happens. They feel into it together, at the pace of a conversation. That helps them stay within their boundaries, and it can also show them a yes they had never let themselves explore.</p>
@@ -375,12 +390,16 @@ input:focus,textarea:focus{border-color:var(--amber)}
     <div class="quotes reveal">
       <blockquote>
         <p>“After years of participating in many kinds of play, saying what I want is still the hardest thing to do. This workshop gave me a simple but creative way to practise that, in a setting that felt supported and safe.”</p>
-        <cite>Workshop participant</cite>
+        <div class="quote__who"><svg class="avatar" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#F2DCC6"/><path d="M11 25c-1-9 2-15 9-15s10 6 9 15c-2-1-3-3-3-6-2 1-9 1-12 0 0 3-1 5-3 6Z" fill="#7A5C4A"/><circle cx="20" cy="18" r="6" fill="#C98F6E"/><path d="M8 38c1.5-7 6-10 12-10s10.5 3 12 10" fill="#C25563"/></svg><cite>Workshop participant</cite></div>
       </blockquote>
       <blockquote>
         <p>“It gave us new ideas, and new angles on things we thought we already knew about each other. We don’t usually talk about this stuff so openly.”</p>
-        <cite>Workshop participant</cite>
+        <div class="quote__who"><svg class="avatar" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#E3E6DA"/><path d="M13.6 15.5c0-4.5 2.8-6.5 6.4-6.5s6.4 2 6.4 6.5c-1.5-1.6-3.5-2.4-6.4-2.4s-4.9.8-6.4 2.4Z" fill="#5B4A3C"/><circle cx="20" cy="18" r="6" fill="#E0B293"/><path d="M8 38c1.5-7 6-10 12-10s10.5 3 12 10" fill="#4E8A63"/></svg><cite>Workshop participant</cite></div>
       </blockquote>
+    </div>
+    <div class="cta-band reveal">
+      <p>Give the couples at your festival a conversation they will remember.</p>
+      <a class="btn" href="#book">Book this workshop for your festival</a>
     </div>
   </div>
 </section>
@@ -443,15 +462,6 @@ input:focus,textarea:focus{border-color:var(--amber)}
   </div>
 </section>
 
-<!-- ============ THE GAME ============ -->
-<section class="section" id="game">
-  <div class="wrap">
-    <p class="eyebrow reveal">The game</p>
-    <h2 class="reveal">The card game behind the workshop</h2>
-    <p class="reveal">We are play-testing a home edition of Recipes for Desire that couples can play without a facilitator. Therapists, sexologists and tantra teachers who would like to use it with clients can write to hello@recipesfordesire.com.</p>
-  </div>
-</section>
-
 <!-- ============ BOOK ============ -->
 <section class="section section--dark" id="book">
   <div class="wrap">
@@ -494,6 +504,14 @@ input:focus,textarea:focus{border-color:var(--amber)}
 </section>
 
 </main>
+
+<!-- ============ THE GAME (slim banner) ============ -->
+<aside class="game-banner" id="game" aria-label="The card game">
+  <div class="wrap game-banner__inner">
+    <span class="game-banner__tag">Coming soon</span>
+    <p>A home edition of the Recipes for Desire card game is in play-testing. Therapists, sexologists and tantra teachers who would like to use it with clients: <a href="mailto:hello@recipesfordesire.com">hello@recipesfordesire.com</a></p>
+  </div>
+</aside>
 
 <footer class="footer">
   <div class="wrap">
