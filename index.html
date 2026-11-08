@@ -106,7 +106,12 @@ figure{margin:0}
    ============================================================ */
 .hero{background:linear-gradient(160deg,var(--paper-warm) 0%,#F7EADB 55%,#F2DCC6 100%)}
 .hero__grid{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem;align-items:center;padding:clamp(1.5rem,5vw,4rem) 0 clamp(3rem,7vw,5rem)}
-@media(min-width:52rem){.hero__grid{grid-template-columns:1.35fr .65fr;gap:3rem}.hero h1{white-space:nowrap}}
+@media(min-width:52rem){
+  .hero__grid{grid-template-columns:1.2fr .8fr;gap:2.25rem;align-items:stretch}
+  .hero h1{white-space:nowrap}
+  .hero__photo{height:100%;min-height:24rem}
+  .hero__photo img{height:100%;aspect-ratio:auto}
+}
 .hero__photo img{
   width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;
   border-radius:22px;box-shadow:0 30px 60px -30px rgba(70,40,20,.45);
@@ -117,7 +122,7 @@ figure{margin:0}
 }
 .hero__logo{width:3.5rem;height:auto;margin:0 0 1.1rem}
 .hero__kicker{font-size:.78rem;font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:var(--terracotta);margin:0 0 .6rem}
-.hero h1{font-size:clamp(2.4rem,4.6vw,3.9rem);letter-spacing:-.025em;margin-bottom:.35em}
+.hero h1{font-size:clamp(2.3rem,4.3vw,3.7rem);letter-spacing:-.025em;margin-bottom:.35em}
 .h1__sub{display:block;font-size:.42em;font-weight:400;font-style:italic;letter-spacing:0;color:var(--terracotta);margin-top:.2em}
 .hero__sub{font-size:clamp(1.15rem,2.6vw,1.4rem);line-height:1.45;color:var(--ink);max-width:32rem;margin-bottom:.8rem}
 .hero__line{font-family:var(--display);font-style:italic;font-size:clamp(1.05rem,2.4vw,1.25rem);color:var(--terracotta);margin-bottom:1.4rem}
@@ -255,7 +260,7 @@ input:focus,textarea:focus{border-color:var(--amber)}
       <p class="hero__line">Speak from desire. Listen with your heart.</p>
       <p class="facts"><span>90 to 120 minutes</span><span>Up to 15 couples</span><span>Talking only, clothes on</span><span>In English</span><span>18+</span></p>
       <a class="btn" href="#book">Book this workshop for your event</a>
-      <p class="hero__reassure">We bring everything. Any quiet room works, even a café.</p>
+      <p class="hero__reassure">An easy first step for couples new to tantra, and fresh play for experienced ones.</p>
     </div>
     <figure class="hero__photo">
       <img src="images/viktor-facilitating.jpg" alt="Viktor smiling, seated on a rug while facilitating a workshop" width="1100" height="1650">
@@ -449,6 +454,7 @@ input:focus,textarea:focus{border-color:var(--amber)}
             <li>Floor space with cushions or mats, or tables and chairs</li>
             <li>Soft lighting</li>
             <li>A speaker for quiet music, if one is available</li>
+            <li>Any quiet room works, even a café</li>
           </ul>
         </div>
       </div>
