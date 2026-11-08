@@ -150,12 +150,16 @@ figure{margin:0}
 .steps li:nth-child(3){border-top-color:var(--terracotta)}
 .steps li:nth-child(4){border-top-color:var(--rose)}
 .steps li::before{content:"Step " counter(step);display:block;font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.5rem}
+.steps__icon{width:2.4rem;height:2.4rem;display:block;margin:.1rem 0 .8rem;fill:none;stroke:var(--green);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.steps li:nth-child(2) .steps__icon{stroke:var(--amber)}
+.steps li:nth-child(3) .steps__icon{stroke:var(--terracotta)}
+.steps li:nth-child(4) .steps__icon{stroke:var(--rose)}
 .steps strong{display:block;font-family:var(--display);font-size:1.15rem;font-weight:600;margin-bottom:.4rem;line-height:1.25}
 .steps p{margin:0;font-size:.97rem;color:var(--ink-soft)}
 .outcome{font-family:var(--display);font-size:clamp(1.15rem,2.6vw,1.4rem);line-height:1.45;margin:2.5rem 0 0;max-width:40rem}
 /* ---------- booking prompts between sections ---------- */
-.cta-band{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem;margin-top:2.75rem;padding:1.4rem 1.6rem;border-radius:18px;background:#FFFDF9;box-shadow:0 18px 40px -30px rgba(60,40,30,.5)}
-.cta-band p{margin:0;font-family:var(--display);font-size:1.15rem;line-height:1.35;flex:1 1 16rem}
+.cta{margin-top:2.75rem}
+.cta p{margin:.9rem 0 0;font-size:.92rem;color:var(--ink-soft)}
 
 /* ---------- why it works ---------- */
 .reasons{display:grid;gap:2rem;margin-top:2rem}
@@ -178,9 +182,9 @@ figure{margin:0}
 /* ---------- quotes ---------- */
 .quotes{display:grid;gap:1.6rem;margin-top:2rem}
 @media(min-width:52rem){.quotes{grid-template-columns:1fr 1fr;gap:2rem}}
-blockquote{margin:0;background:#FFFDF9;border-radius:16px;padding:1.75rem;border-left:4px solid var(--rose)}
+blockquote{margin:0;background:#FFFDF9;border-radius:16px;padding:1.75rem;border-left:4px solid var(--rose);display:flex;flex-direction:column}
 blockquote p{font-family:var(--display);font-size:1.06rem;line-height:1.5;margin-bottom:.9rem}
-.quote__who{display:flex;align-items:center;gap:.75rem}
+.quote__who{display:flex;align-items:center;gap:.75rem;margin-top:auto;padding-top:.6rem}
 .avatar{width:2.6rem;height:2.6rem;flex:none;border-radius:50%}
 blockquote cite{font-style:normal;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
 
@@ -241,7 +245,7 @@ input:focus,textarea:focus{border-color:var(--amber)}
     <div class="hero__text">
       <img class="hero__logo" src="images/logo-dark.png" alt="" width="56" height="56">
       <p class="hero__kicker">A couples workshop for your event to deepen relationships</p>
-      <h1>Recipes for Desire <span class="h1__sub">Workshop</span></h1>
+      <h1>Recipes for Desire</h1>
       <p class="hero__sub">Couples share their desires through a playful card game, and leave with date ideas they are both excited to try.</p>
       <p class="hero__line">Speak from desire. Listen with your heart.</p>
       <p class="facts"><span>90 to 120 minutes</span><span>Up to 15 couples</span><span>Talking only, clothes on</span><span>In English</span><span>18+</span></p>
@@ -276,8 +280,9 @@ input:focus,textarea:focus{border-color:var(--amber)}
     <p class="eyebrow reveal">The workshop</p>
     <h2 class="reveal">Desire can be hard to talk about, even with the person you love</h2>
     <p class="lede reveal">Many couples carry fantasies they have never said out loud. Keeping quiet can feel safer than risking an awkward silence, even years into the relationship.</p>
-    <p class="lede reveal">Recipes for Desire is a card game we designed to make such conversations easy, playful and deeply connecting. It is the core of our workshop, where the cards and a cooking metaphor give each couple a clear structure, so they can stop overthinking, sense their yeses and nos, listen with their heart and grow together towards what brings them aliveness. In the 90 to 120 minute workshop, each couple finds the desires they share and turns them into sensual date ideas they are excited to try later.</p>
-    <p class="lede reveal">In your programme, it fits the slot for couples who came to deepen their connection. It is talk-based and touch-free, so it works for newcomers to tantra as well as experienced practitioners, and for couples and flirts of any orientation.</p>
+    <p class="lede reveal">Recipes for Desire is a card game we designed to make these conversations easy, playful and deeply connecting. In our workshop, couples find the desires they share and grow together towards what brings them aliveness.</p>
+    <p class="lede reveal">It fits the slot in your programme for couples who want to deepen their connection, from newcomers to tantra to experienced practitioners, and for couples and flirts of any orientation.</p>
+    <!-- LATER: a photo of happy couples talking during the workshop goes here, once you have one. -->
   </div>
 </section>
 
@@ -290,28 +295,30 @@ input:focus,textarea:focus{border-color:var(--amber)}
 
     <ol class="steps reveal">
       <li>
+        <svg class="steps__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 11h15a3.5 3.5 0 1 0-3.5-3.5"/><path d="M4 17h21a3.5 3.5 0 1 1-3.5 3.5"/><path d="M4 23h10"/></svg>
         <strong>Arrive</strong>
         <p>We start by setting intentions and taking three deep breaths together. Then a playful round of thumbs up or down to different foods you like helps you notice your own yes and no, before anything more personal comes up.</p>
       </li>
       <li>
+        <svg class="steps__icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="4" width="16" height="24" rx="2.5"/><path d="M12.5 12.5l7 7M19.5 12.5l-7 7"/></svg>
         <strong>Remove the allergies</strong>
         <p>Each of you gets a deck of fantasy cards, each card one ingredient for a sexy date: a place, an activity, a tool. Whatever is not for you gets discarded. A no needs no explanation.</p>
       </li>
       <li>
+        <svg class="steps__icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="7" width="14" height="20" rx="2.5" transform="rotate(-8 11 17)"/><rect x="14" y="5" width="14" height="20" rx="2.5" transform="rotate(8 21 15)"/><path d="M21 19s-4-2.5-4-5.2a2 2 0 0 1 4-.6 2 2 0 0 1 4 .6c0 2.7-4 5.2-4 5.2Z"/></svg>
         <strong>Find your favourites, season with maybes</strong>
         <p>Together you discover the cards you both said hell yes to. The maybes become gentle conversations about what would make them a yes.</p>
       </li>
       <li>
+        <svg class="steps__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 9c-3-2-7-2.5-11-2v18c4-.5 8 0 11 2 3-2 7-2.5 11-2V7c-4-.5-8 0-11 2Z"/><path d="M16 9v18"/><path d="M8.5 12h4M8.5 16h4M19.5 12h4M19.5 16h4"/></svg>
         <strong>Cook your recipe</strong>
         <p>You combine your favourites into a date idea with a starter, a main course and a dessert. You describe it to each other in vivid detail, then write it into your Recipe Book to take home.</p>
       </li>
     </ol>
 
-    <p class="outcome reveal">You leave with two to four date ideas you had never thought of, and are both excited to try.</p>
-
-    <div class="cta-band reveal">
-      <p>Want your couples to leave with recipes like these?</p>
+    <div class="cta reveal">
       <a class="btn" href="#book">Book this workshop for your event</a>
+      <p>Each couple leaves with two to four date ideas, written into their own Recipe Book.</p>
     </div>
   </div>
 </section>
@@ -384,20 +391,19 @@ input:focus,textarea:focus{border-color:var(--amber)}
   <div class="wrap">
     <p class="eyebrow reveal">Participants said</p>
     <h2 class="reveal">“New angles on things we thought we already knew about each other”</h2>
-    <p class="reveal">We first ran the workshop in summer 2026 at an arts festival in Sweden, with ten couples.</p>
     <div class="quotes reveal">
       <blockquote>
         <p>“After years of participating in many kinds of play, saying what I want is still the hardest thing to do. This workshop gave me a simple but creative way to practise that, in a setting that felt supported and safe.”</p>
-        <div class="quote__who"><svg class="avatar" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#F2DCC6"/><path d="M11 25c-1-9 2-15 9-15s10 6 9 15c-2-1-3-3-3-6-2 1-9 1-12 0 0 3-1 5-3 6Z" fill="#7A5C4A"/><circle cx="20" cy="18" r="6" fill="#C98F6E"/><path d="M8 38c1.5-7 6-10 12-10s10.5 3 12 10" fill="#C25563"/></svg><cite>Workshop participant</cite></div>
+        <div class="quote__who"><svg class="avatar" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#ECE6DE"/><path d="M11 25c-1-9 2-15 9-15s10 6 9 15c-2-1-3-3-3-6-2 1-9 1-12 0 0 3-1 5-3 6Z" fill="#8A8079"/><circle cx="20" cy="18" r="6" fill="#B3AAA0"/><path d="M8 38c1.5-7 6-10 12-10s10.5 3 12 10" fill="#8A8079"/></svg><cite>Workshop participant</cite></div>
       </blockquote>
       <blockquote>
         <p>“It gave us new ideas, and new angles on things we thought we already knew about each other. We don’t usually talk about this stuff so openly.”</p>
-        <div class="quote__who"><svg class="avatar" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#E3E6DA"/><path d="M13.6 15.5c0-4.5 2.8-6.5 6.4-6.5s6.4 2 6.4 6.5c-1.5-1.6-3.5-2.4-6.4-2.4s-4.9.8-6.4 2.4Z" fill="#5B4A3C"/><circle cx="20" cy="18" r="6" fill="#E0B293"/><path d="M8 38c1.5-7 6-10 12-10s10.5 3 12 10" fill="#4E8A63"/></svg><cite>Workshop participant</cite></div>
+        <div class="quote__who"><svg class="avatar" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#ECE6DE"/><path d="M13.6 15.5c0-4.5 2.8-6.5 6.4-6.5s6.4 2 6.4 6.5c-1.5-1.6-3.5-2.4-6.4-2.4s-4.9.8-6.4 2.4Z" fill="#8A8079"/><circle cx="20" cy="18" r="6" fill="#B3AAA0"/><path d="M8 38c1.5-7 6-10 12-10s10.5 3 12 10" fill="#8A8079"/></svg><cite>Workshop participant</cite></div>
       </blockquote>
     </div>
-    <div class="cta-band reveal">
-      <p>Give the couples at your event a conversation they will remember.</p>
+    <div class="cta reveal">
       <a class="btn" href="#book">Book this workshop for your event</a>
+      <p>Participants found it a safe, playful way to say what they want.</p>
     </div>
   </div>
 </section>
