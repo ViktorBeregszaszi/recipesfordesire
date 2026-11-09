@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-pal="toys" data-wonky data-font="young" data-hero="r3-poster">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,18 +12,16 @@
 <!-- Link previews when you paste the URL into an email or an application form -->
 <meta property="og:title" content="Recipes for Desire, a tantra workshop for your festival">
 <meta property="og:description" content="Couples share their desires through a card game and leave with date ideas they are excited to try.">
-<meta property="og:image" content="https://recipesfordesire.com/images/viktor-facilitating.jpg">
+<meta property="og:image" content="https://recipesfordesire.com/images/hero-workshop.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://recipesfordesire.com/">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="theme-color" content="#F3E7D6">
+<meta name="theme-color" content="#FFF6EC">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,600;0,700;1,9..144,400&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<!-- Fonts are hosted on this site (fonts folder), so no visitor data goes to Google. -->
 
 <style>
 /* ============================================================
@@ -46,7 +44,7 @@
   --rose:#C25563;
   --rule:rgba(46,40,35,.16);
 
-  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --display:'Young Serif',Georgia,'Times New Roman',serif;
   --body:'Work Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 
   --measure:38rem;
@@ -243,6 +241,274 @@ input:focus,textarea:focus{border-color:var(--amber)}
   .reveal{opacity:1;transform:none;transition:none}
   .btn{transition:none}
 }
+
+/* ============================================================
+   VERSION 9 LOOK: Toy box colours, wonky cards, dark top and white page
+   ============================================================ */
+@font-face{font-family:"Work Sans";src:url(fonts/WorkSans-Regular.ttf) format("truetype");font-weight:300 500;font-display:swap}
+@font-face{font-family:"Work Sans";src:url(fonts/WorkSans-Bold.ttf) format("truetype");font-weight:600 800;font-display:swap}
+@font-face{font-family:"Work Sans";src:url(fonts/WorkSans-Italic.ttf) format("truetype");font-style:italic;font-display:swap}
+@font-face{font-family:"Young Serif";src:url(fonts/YoungSerif-Regular.ttf) format("truetype");font-weight:400 700;font-display:swap}
+html[data-font="bricolage"]{--display:"Bricolage Grotesque",var(--body)}
+html[data-font="gloock"]{--display:"Gloock",Georgia,serif}
+html[data-font="instrument"]{--display:"Instrument Serif",Georgia,serif}
+html[data-font="young"]{--display:"Young Serif",Georgia,serif}
+html[data-font="boldonse"]{--display:"Boldonse",var(--body)}
+html[data-font="instrument"] h1, html[data-font="instrument"] h2{font-weight:400;letter-spacing:-.01em}
+html[data-font="instrument"] .hero h1{font-size:clamp(2.6rem,5.2vw,4.4rem)}
+html[data-font="instrument"] h2{font-size:clamp(2rem,4.6vw,2.9rem)}
+html[data-font="gloock"] h1, html[data-font="gloock"] h2, html[data-font="gloock"] h3, html[data-font="young"] h1, html[data-font="young"] h2, html[data-font="young"] h3{font-weight:400}
+html[data-font="boldonse"] .hero h1{font-size:clamp(1.8rem,3.2vw,2.7rem);line-height:1.35}
+html[data-font="boldonse"] h2{font-size:clamp(1.3rem,2.6vw,1.75rem);line-height:1.45}
+html[data-font="boldonse"] h3, html[data-font="boldonse"] .steps strong, html[data-font="boldonse"] .who-for strong{font-family:var(--body);font-weight:600}
+
+html[data-pal="toys"]{--c1:#3FB3CC;--c2:#C8336A;--c3:#A8CF3A;--c4:#FF7A2B;--o1:#0E1012;--o2:#fff;--o3:#0E1012;--t1:#B02A5C;--h1:#3FC6E0;--h2:#FF6FA3;--btn:#C8336A;--btn-text:#fff;--btn-hover:#A8295A;
+  --paper:#FFFFFF;--paper-warm:#F4F4F3;--paper-deep:#F4F4F3;--ink:#111214;--ink-soft:#4A4D52;--rule:rgba(17,18,20,.14);--plum-deep:#07080A;--terracotta:var(--t1)}
+html[data-pal] .hero{background:radial-gradient(120% 90% at 85% 20%,color-mix(in srgb,var(--c1) 26%,#0E1012) 0%,#0E1012 62%)}
+html[data-pal] .hero h1, html[data-pal] .hero__sub{color:#EEECE8}
+html[data-pal] .hero .facts, html[data-pal] .hero__reassure{color:#A9ADB2}
+html[data-pal] .facts span:not(:last-child)::after{color:var(--h1)}
+html[data-pal] .hero__kicker{color:var(--h1)}
+html[data-pal] .hero__line{color:var(--h2)}
+html[data-pal] .hero__logo{filter:brightness(0) invert(1)}
+html[data-pal] .btn{background:var(--btn);color:var(--btn-text)}
+html[data-pal] .btn:hover{background:var(--btn-hover);color:var(--btn-text)}
+html[data-pal] .form .btn{background:var(--btn);color:var(--btn-text)}
+html[data-pal] .nav{background:rgba(255,255,255,.95)}
+html[data-pal] .eyebrow, html[data-pal] .bio__role{color:var(--t1)}
+html[data-pal] .section--dark{background:#0E1012}
+html[data-pal] .section--dark .eyebrow{color:var(--h1)}
+html[data-pal] .steps li, html[data-pal] blockquote, html[data-pal] .card{background:#fff;border:1px solid #E6E6E4;box-shadow:none}
+html[data-pal] .steps li{border-top:5px solid var(--c1)}
+html[data-pal] .steps li:nth-child(2){border-top-color:var(--c2)} html[data-pal] .steps li:nth-child(3){border-top-color:var(--c3)} html[data-pal] .steps li:nth-child(4){border-top-color:var(--c4)}
+html[data-pal] .steps li:nth-child(1) .steps__icon{stroke:var(--c1)} html[data-pal] .steps li:nth-child(2) .steps__icon{stroke:var(--c2)} html[data-pal] .steps li:nth-child(3) .steps__icon{stroke:var(--c3)} html[data-pal] .steps li:nth-child(4) .steps__icon{stroke:var(--c4)}
+html[data-pal] .reasons>div:nth-child(1) .reasons__icon{stroke:var(--c1)} html[data-pal] .reasons>div:nth-child(2) .reasons__icon{stroke:var(--c2)} html[data-pal] .reasons>div:nth-child(3) .reasons__icon{stroke:var(--c3)}
+html[data-pal] .reasons>div:nth-child(1) h3{border-top-color:var(--c1)} html[data-pal] .reasons>div:nth-child(2) h3{border-top-color:var(--c2)} html[data-pal] .reasons>div:nth-child(3) h3{border-top-color:var(--c3)}
+html[data-pal] .reasons h3, html[data-pal] .care h3, html[data-pal] #organisers h3{color:var(--ink)}
+html[data-pal] .trio .card:nth-child(1) .card__bar{background:var(--c1)!important;color:var(--o1)!important}
+html[data-pal] .trio .card:nth-child(2) .card__bar{background:var(--c2)!important;color:var(--o2)!important}
+html[data-pal] .trio .card:nth-child(3) .card__bar{background:var(--c3)!important;color:var(--o3)!important}
+html[data-pal] .plain li::before{background:var(--c2)}
+html[data-pal] blockquote{border-left-color:var(--c1)} html[data-pal] blockquote+blockquote{border-left-color:var(--c2)}
+html[data-pal] .game-banner{background:#F4F4F3} html[data-pal] .game-banner__tag{background:var(--c3);color:var(--o3)}
+
+/* hero holds a landscape photo now */
+@media(min-width:52rem){ .hero__grid{grid-template-columns:1.1fr .9fr} .hero__photo img{object-position:46% 50%} }
+
+/* who it is for */
+.who-for{margin-top:3rem}
+.who-for h3{font-size:1.35rem;margin-bottom:1.1rem}
+.who-for__list{list-style:none;padding:0;margin:0;display:grid;gap:1.25rem}
+@media(min-width:44rem){.who-for__list{grid-template-columns:1fr 1fr}}
+@media(min-width:64rem){.who-for__list{grid-template-columns:repeat(4,1fr)}}
+.who-for__list li{background:#F7F6F4;border-radius:18px;padding:1.3rem 1.3rem 1.4rem}
+.who-for__icon{width:2.2rem;height:2.2rem;display:block;margin-bottom:.7rem;fill:none;stroke:var(--c1);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.who-for__list li:nth-child(2) .who-for__icon{stroke:var(--c2)} .who-for__list li:nth-child(3) .who-for__icon{stroke:var(--c3)} .who-for__list li:nth-child(4) .who-for__icon{stroke:var(--c4)}
+.who-for strong{display:block;font-family:var(--display);font-size:1.08rem;line-height:1.25;margin-bottom:.35rem}
+.who-for p{margin:0;font-size:.95rem;color:var(--ink-soft)}
+
+/* black and white photos get a warm tint */
+.tint{filter:sepia(.38) saturate(1.15) contrast(1.02)}
+
+/* wonky: tilted cards, sticker shadows in the palette colours */
+html[data-wonky] .steps li{rotate:-1.3deg;box-shadow:7px 7px 0 var(--c1);border-radius:20px}
+html[data-wonky] .steps li:nth-child(2){rotate:1.1deg;box-shadow:7px 7px 0 var(--c2)}
+html[data-wonky] .steps li:nth-child(3){rotate:-.8deg;box-shadow:7px 7px 0 var(--c3)}
+html[data-wonky] .steps li:nth-child(4){rotate:1.4deg;box-shadow:7px 7px 0 var(--c4)}
+html[data-wonky] .who-for__list li:nth-child(odd){rotate:-.7deg} html[data-wonky] .who-for__list li:nth-child(even){rotate:.8deg}
+html[data-wonky] .trio .card:nth-child(1){rotate:-1deg} html[data-wonky] .trio .card:nth-child(2){rotate:.8deg} html[data-wonky] .trio .card:nth-child(3){rotate:-.6deg}
+html[data-wonky] .hero__photo img{rotate:1.4deg;box-shadow:14px 14px 0 var(--c2);border-radius:26px}
+html[data-wonky] .photo img{rotate:-1.4deg;box-shadow:12px 12px 0 var(--c3);border-radius:22px}
+html[data-wonky] blockquote{rotate:-.6deg} html[data-wonky] blockquote+blockquote{rotate:.7deg}
+html[data-wonky] .bio__photo{box-shadow:5px 5px 0 var(--c1)}
+html[data-wonky] .btn{box-shadow:4px 4px 0 #0E1012}
+html[data-wonky] .hero .btn{box-shadow:4px 4px 0 var(--h2)}
+
+/* ============================================================
+   LIGHT HERO OPTIONS (data-hero on <html>)
+   ============================================================ */
+.hero{position:relative;overflow:hidden}
+.hero__grid{position:relative;z-index:1}
+.hero__deco{display:none}
+html[data-hero] .hero h1, html[data-hero] .hero__sub{color:#111214}
+html[data-hero] .hero .facts, html[data-hero] .hero__reassure{color:#4A4D52}
+html[data-hero] .hero__kicker{color:#B02A5C}
+html[data-hero] .hero__line{color:#C8336A}
+html[data-hero] .facts span:not(:last-child)::after{color:#C8336A}
+html[data-hero] .hero__logo{filter:none}
+html[data-hero][data-wonky] .hero .btn{box-shadow:4px 4px 0 #111214}
+
+/* 1. Clean white with the four card colours as a stripe */
+html[data-hero="white"] .hero{background:#FFFFFF;border-top:8px solid;border-image:linear-gradient(90deg,#3FB3CC 0 25%,#C8336A 25% 50%,#A8CF3A 50% 75%,#FF7A2B 75%) 1}
+
+/* 2. Blush */
+html[data-hero="blush"] .hero{background:#FCE9F0}
+html[data-hero="blush"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #3FB3CC}
+
+/* 3. Turquoise colour block */
+html[data-hero="turquoise"] .hero{background:#7FD3E2}
+html[data-hero="turquoise"] .hero__kicker{color:#7A1D41}
+html[data-hero="turquoise"] .hero__line{color:#9C1F4E}
+html[data-hero="turquoise"] .hero .facts, html[data-hero="turquoise"] .hero__reassure{color:#1F3A40}
+html[data-hero="turquoise"] .facts span:not(:last-child)::after{color:#9C1F4E}
+html[data-hero="turquoise"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #C8336A}
+
+/* 4. Poster split: cream page, big magenta block behind the photo */
+html[data-hero="poster"] .hero{background:#FBF7F1}
+html[data-hero="poster"] .hero__deco{display:block;position:absolute;inset:0}
+html[data-hero="poster"] .hero__deco i:first-child{position:absolute;top:0;bottom:0;right:0;width:38%;background:#C8336A;border-bottom-left-radius:120px}
+html[data-hero="poster"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #A8CF3A}
+@media(max-width:51.9375rem){html[data-hero="poster"] .hero__deco i:first-child{width:100%;height:370px;bottom:auto;border-bottom-left-radius:60px}}
+
+/* 5. Spilled cards: cream table with tilted cards in the four colours */
+html[data-hero="cards"] .hero{background:#FBF7F1}
+html[data-hero="cards"] .hero__deco{display:block;position:absolute;inset:0}
+html[data-hero="cards"] .hero__deco i{position:absolute;width:120px;height:172px;border-radius:14px;opacity:.9;box-shadow:0 10px 24px -14px rgba(0,0,0,.35)}
+html[data-hero="cards"] .hero__deco i:nth-child(1){background:#3FB3CC;left:-30px;top:40px;rotate:-18deg}
+html[data-hero="cards"] .hero__deco i:nth-child(2){background:#A8CF3A;left:44%;bottom:-70px;rotate:14deg}
+html[data-hero="cards"] .hero__deco i:nth-child(3){background:#FF7A2B;right:-34px;top:-40px;rotate:22deg}
+html[data-hero="cards"] .hero__deco i:nth-child(4){background:#C8336A;right:6%;bottom:-90px;rotate:-12deg}
+html[data-hero="cards"] .hero__deco i:nth-child(5){background:#3FB3CC;left:38%;top:-110px;rotate:-6deg;opacity:.55}
+html[data-hero="cards"] .hero__deco i:nth-child(6){background:#C8336A;left:2%;bottom:-120px;rotate:9deg;opacity:.55}
+
+/* 6. Festival glow: soft pastel blend of the four colours */
+html[data-hero="glow"] .hero{background:
+  radial-gradient(45% 60% at 12% 18%,rgba(63,179,204,.32),transparent 70%),
+  radial-gradient(40% 55% at 88% 12%,rgba(255,122,43,.28),transparent 70%),
+  radial-gradient(50% 60% at 78% 92%,rgba(200,51,106,.26),transparent 70%),
+  radial-gradient(45% 55% at 25% 95%,rgba(168,207,58,.30),transparent 70%),#FFF9F3}
+
+/* ============================================================
+   ROUND 2: poster and glow directions
+   ============================================================ */
+html[data-hero^="r2-"] .hero__deco{display:block;position:absolute;inset:0}
+html[data-hero^="r2-"] .hero__deco i{position:absolute}
+
+/* A. Turquoise arch: a temple-door shape behind the photo */
+html[data-hero="r2-arch"] .hero{background:#FBF7F1}
+html[data-hero="r2-arch"] .hero__deco i:first-child{right:3%;top:7%;bottom:-2px;width:41%;background:#9FDCE6;border-radius:999px 999px 0 0}
+html[data-hero="r2-arch"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #FF7A2B}
+
+/* B. Peach poster block */
+html[data-hero="r2-peach"] .hero{background:#FBF7F1}
+html[data-hero="r2-peach"] .hero__deco i:first-child{top:0;bottom:0;right:0;width:38%;background:#FFC3A0;border-bottom-left-radius:140px}
+html[data-hero="r2-peach"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #3FB3CC}
+
+/* C. Sage poster block */
+html[data-hero="r2-sage"] .hero{background:#FBF7F1}
+html[data-hero="r2-sage"] .hero__deco i:first-child{top:0;bottom:0;right:0;width:38%;background:#D3E6A6;border-bottom-left-radius:140px}
+html[data-hero="r2-sage"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #C8336A}
+
+/* D. Glow with an arch outline */
+html[data-hero="r2-glowarch"] .hero{background:
+  radial-gradient(45% 60% at 10% 15%,rgba(63,179,204,.28),transparent 70%),
+  radial-gradient(45% 60% at 90% 90%,rgba(255,122,43,.24),transparent 70%),
+  radial-gradient(40% 50% at 70% 10%,rgba(200,51,106,.16),transparent 70%),#FFF9F3}
+html[data-hero="r2-glowarch"] .hero__deco i:first-child{right:2%;top:6%;bottom:-2px;width:43%;border:3px solid rgba(63,179,204,.55);border-bottom:0;border-radius:999px 999px 0 0}
+html[data-hero="r2-glowarch"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #A8CF3A}
+
+/* E. Golden hour: warmer, sunset glow */
+html[data-hero="r2-sunset"] .hero{background:
+  radial-gradient(55% 70% at 92% 8%,rgba(255,122,43,.42),transparent 70%),
+  radial-gradient(45% 60% at 60% 105%,rgba(200,51,106,.28),transparent 70%),
+  radial-gradient(40% 55% at 5% 80%,rgba(255,196,120,.35),transparent 70%),#FFF6EC}
+html[data-hero="r2-sunset"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #3FB3CC}
+
+/* F. Soft blob: one organic shape in turquoise-to-pink behind the photo */
+html[data-hero="r2-blob"] .hero{background:#FFF9F3}
+html[data-hero="r2-blob"] .hero__deco i:first-child{right:-4%;top:-6%;width:52%;height:118%;
+  background:linear-gradient(140deg,rgba(63,179,204,.55),rgba(255,111,163,.45) 60%,rgba(255,122,43,.40));
+  border-radius:46% 54% 61% 39% / 42% 47% 53% 58%;filter:blur(2px)}
+html[data-hero="r2-blob"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #111214}
+
+@media(max-width:51.9375rem){
+  html[data-hero="r2-arch"] .hero__deco i:first-child, html[data-hero="r2-glowarch"] .hero__deco i:first-child{right:6%;left:6%;width:auto;top:10px;bottom:auto;height:350px}
+  html[data-hero="r2-peach"] .hero__deco i:first-child, html[data-hero="r2-sage"] .hero__deco i:first-child{width:100%;height:370px;bottom:auto;border-bottom-left-radius:70px}
+  html[data-hero="r2-blob"] .hero__deco i:first-child{right:-20%;top:-4%;width:130%;height:52%}
+}
+
+/* ============================================================
+   ROUND 3: golden hour glow + magenta poster
+   ============================================================ */
+html[data-hero^="r3-"] .hero__deco{display:block;position:absolute;inset:0}
+html[data-hero^="r3-"] .hero__deco i{position:absolute}
+html[data-hero^="r3-"] .hero{background:
+  radial-gradient(55% 70% at 8% 100%,rgba(255,196,120,.38),transparent 70%),
+  radial-gradient(45% 60% at 40% 0%,rgba(255,122,43,.20),transparent 70%),#FFF6EC}
+html[data-hero^="r3-"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #3FB3CC}
+
+/* 1. Golden glow with the magenta poster block */
+html[data-hero="r3-poster"] .hero__deco i:first-child{top:0;bottom:0;right:0;width:38%;background:#C8336A;border-bottom-left-radius:140px}
+
+/* 2. Golden glow with a magenta arch */
+html[data-hero="r3-arch"] .hero__deco i:first-child{right:3%;top:7%;bottom:-2px;width:41%;background:#C8336A;border-radius:999px 999px 0 0}
+
+/* 3. Sunset poster: the block fades from magenta to orange */
+html[data-hero="r3-sunsetblock"] .hero__deco i:first-child{top:0;bottom:0;right:0;width:40%;background:linear-gradient(200deg,#FF7A2B 0%,#E5507A 45%,#C8336A 100%);border-bottom-left-radius:160px}
+
+/* 4. Setting sun: a large warm disc behind the photo */
+html[data-hero="r3-sun"] .hero__deco i:first-child{right:1%;top:50%;translate:0 -50%;width:min(46vw,640px);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 50% 40%,#FFB36B 0%,#FF7A2B 38%,#E5507A 72%,#C8336A 100%)}
+html[data-hero="r3-sun"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #111214}
+
+/* 5. Glowing block: magenta with soft, light-spilling edges */
+html[data-hero="r3-glowblock"] .hero__deco i:first-child{top:0;bottom:0;right:0;width:36%;background:#C8336A;border-bottom-left-radius:140px;
+  box-shadow:0 0 90px 30px rgba(255,122,43,.45), 0 0 160px 60px rgba(200,51,106,.25)}
+
+/* 6. Stage: a magenta platform under the photo, a small sun above */
+html[data-hero="r3-stage"] .hero__deco i:nth-child(1){right:0;bottom:0;width:44%;height:58%;background:#C8336A;border-top-left-radius:140px}
+html[data-hero="r3-stage"] .hero__deco i:nth-child(2){right:5%;top:5%;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle,#FFB36B,#FF7A2B 70%)}
+
+@media(max-width:51.9375rem){
+  html[data-hero="r3-poster"] .hero__deco i:first-child, html[data-hero="r3-sunsetblock"] .hero__deco i:first-child, html[data-hero="r3-glowblock"] .hero__deco i:first-child{width:100%;height:370px;bottom:auto;border-bottom-left-radius:70px}
+  html[data-hero="r3-arch"] .hero__deco i:first-child{right:6%;left:6%;width:auto;top:10px;bottom:auto;height:350px}
+  html[data-hero="r3-sun"] .hero__deco i:first-child{right:50%;translate:50% 0;top:-30px;width:92vw}
+  html[data-hero="r3-stage"] .hero__deco i:nth-child(1){top:150px;bottom:auto;height:210px;width:100%;border-top-left-radius:70px}
+  html[data-hero="r3-stage"] .hero__deco i:nth-child(2){top:1%;right:4%;width:70px;height:70px}
+}
+
+/* ============================================================
+   ROUND 3: golden hour glow + magenta poster
+   ============================================================ */
+html[data-hero^="r3-"] .hero__deco{display:block;position:absolute;inset:0}
+html[data-hero^="r3-"] .hero__deco i{position:absolute}
+html[data-hero^="r3-"] .hero{background:
+  radial-gradient(55% 70% at 8% 12%,rgba(255,196,120,.38),transparent 70%),
+  radial-gradient(45% 60% at 30% 110%,rgba(255,122,43,.26),transparent 70%),
+  radial-gradient(40% 55% at 60% 0%,rgba(255,111,163,.18),transparent 70%),#FFF6EC}
+
+/* 1. Sunset poster: the magenta block from option 4 on the golden-hour glow */
+html[data-hero="r3-poster"] .hero__deco i:first-child{top:0;bottom:0;right:0;width:38%;background:#C8336A;border-bottom-left-radius:120px}
+html[data-hero="r3-poster"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #FF9A3D}
+
+/* 2. Sunset block: the poster block itself fades from magenta into orange */
+html[data-hero="r3-gradient"] .hero__deco i:first-child{top:0;bottom:0;right:0;width:38%;background:linear-gradient(200deg,#FF8A3D 0%,#E8456F 55%,#B42A62 100%);border-bottom-left-radius:120px}
+html[data-hero="r3-gradient"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #3FB3CC}
+
+/* 3. Magenta arch on golden hour */
+html[data-hero="r3-arch"] .hero__deco i:first-child{right:3%;top:7%;bottom:-2px;width:41%;background:linear-gradient(180deg,#E8456F,#C8336A);border-radius:999px 999px 0 0}
+html[data-hero="r3-arch"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #FF9A3D}
+
+/* 4. Setting sun: a big magenta-to-orange circle behind the photo */
+html[data-hero="r3-sun"] .hero__deco i:first-child{right:-3%;top:50%;translate:0 -50%;width:min(46vw,600px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FF9A3D 0%,#E8456F 55%,#C8336A 100%)}
+html[data-hero="r3-sun"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #111214}
+
+/* 5. Glowing block: the magenta block with soft, sun-blurred edges */
+html[data-hero="r3-soft"] .hero__deco i:first-child{top:-10%;bottom:-10%;right:-6%;width:44%;background:radial-gradient(70% 60% at 60% 40%,#E8456F 0%,#C8336A 55%,rgba(200,51,106,0) 100%);filter:blur(10px)}
+html[data-hero="r3-soft"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #FF9A3D}
+
+/* 6. Horizon: a magenta band across the bottom, like the sun just set */
+html[data-hero="r3-horizon"] .hero__deco i:first-child{left:0;right:0;bottom:0;height:34%;background:linear-gradient(180deg,rgba(232,69,111,0) 0%,rgba(232,69,111,.55) 45%,#C8336A 100%)}
+html[data-hero="r3-horizon"][data-wonky] .hero__photo img{box-shadow:14px 14px 0 #FF9A3D}
+html[data-hero="r3-horizon"] .hero__reassure{color:#2A1A20}
+
+@media(max-width:51.9375rem){
+  html[data-hero="r3-poster"] .hero__deco i:first-child, html[data-hero="r3-gradient"] .hero__deco i:first-child{width:100%;height:42%;bottom:auto;border-bottom-left-radius:70px}
+  html[data-hero="r3-arch"] .hero__deco i:first-child{right:6%;left:6%;width:auto;top:10px;bottom:auto;height:37%}
+  html[data-hero="r3-sun"] .hero__deco i:first-child{right:-15%;top:2%;translate:0 0;width:100vw}
+  html[data-hero="r3-soft"] .hero__deco i:first-child{width:120%;height:48%;top:-6%;bottom:auto}
+  html[data-hero="r3-horizon"] .hero__deco i:first-child{height:20%}
+}
 </style>
 </head>
 <body>
@@ -251,10 +517,11 @@ input:focus,textarea:focus{border-color:var(--amber)}
 
 <!-- ============ HERO ============ -->
 <header class="hero" id="top">
+  <div class="hero__deco" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <div class="wrap hero__grid">
     <div class="hero__text">
       <img class="hero__logo" src="images/logo-dark.png" alt="" width="56" height="56">
-      <p class="hero__kicker">A couples workshop for your event to deepen relationships</p>
+      <p class="hero__kicker">A couples workshop for tantra festivals, retreats and venues</p>
       <h1>Recipes for Desire</h1>
       <p class="hero__sub">Couples share their desires through a playful card game, and leave with date ideas they are excited to try.</p>
       <p class="hero__line">Speak from desire. Listen with your heart.</p>
@@ -263,7 +530,7 @@ input:focus,textarea:focus{border-color:var(--amber)}
       <p class="hero__reassure">An easy first step for couples new to tantra, and fresh play for experienced ones.</p>
     </div>
     <figure class="hero__photo">
-      <img src="images/viktor-facilitating.jpg" alt="Viktor smiling, seated on a rug while facilitating a workshop" width="1100" height="1650">
+      <img src="images/hero-workshop.jpg" alt="Viktor and Rebecca lying on a cushion at a tantra workshop, writing a fantasy together in a notebook" width="1600" height="1200">
     </figure>
   </div>
 </header>
@@ -287,17 +554,26 @@ input:focus,textarea:focus{border-color:var(--amber)}
 <section class="section" id="workshop">
   <div class="wrap">
     <p class="eyebrow reveal">The workshop</p>
-    <h2 class="reveal">Desire can be hard to talk about, even with the person you love</h2>
+    <h2 class="reveal">Fantasies and desires can be hard to share, even with the person you love</h2>
     <div class="split" id="workshop-split">
     <div>
-    <p class="lede reveal">Many couples carry fantasies they have never said out loud. Keeping quiet can feel safer than risking an awkward silence, even years into the relationship.</p>
-    <p class="lede reveal">Recipes for Desire is a card game we designed to make these conversations easy, playful and deeply connecting. In our workshop, couples find the desires they share and grow together towards what brings them aliveness.</p>
-    <p class="lede reveal">It fits the slot in your programme for couples who want to deepen their connection, from newcomers to tantra to experienced practitioners, and for couples and flirts of any orientation.</p>
+    <p class="lede reveal">Many people in a relationship carry fantasies they have never dared to share with their partner. Keeping quiet can feel safer than risking an awkward silence, even years in.</p>
+    <p class="lede reveal">Recipes for Desire is a card game we designed to make these conversations easy, playful and deeply connecting. In our workshop, couples find the desires they share, bring back the spark and grow together towards what brings them aliveness.</p>
+    <p class="lede reveal">It fits the slot in your programme for couples who want to deepen their connection.</p>
     </div>
     <!-- PHOTO: upload images/workshop-cards.jpg and it appears here on its own. Later, swap in a photo of couples talking. -->
     <figure class="photo reveal">
       <img src="images/workshop-cards.jpg" alt="Hands holding three cards from the deck, a place, an ingredient and an activity, above the Hell Yes and No Thank You sheets" onerror="document.getElementById('workshop-split').classList.add('split--solo');this.parentElement.remove()">
     </figure>
+    </div>
+    <div class="who-for">
+      <h3 class="reveal">Who it is for</h3>
+      <ul class="who-for__list reveal">
+        <li><svg class="who-for__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c1.2 4.3 3.2 6.6 7.5 8-4.3 1.4-6.3 3.7-7.5 8-1.2-4.3-3.2-6.6-7.5-8 4.3-1.4 6.3-3.7 7.5-8Z"/><path d="M25 20c.5 1.8 1.4 2.8 3.2 3.4-1.8.6-2.7 1.6-3.2 3.4-.5-1.8-1.4-2.8-3.2-3.4 1.8-.6 2.7-1.6 3.2-3.4Z"/></svg><strong>Couples who want the spark back</strong><p>Years together, and ready to rediscover each other.</p></li>
+        <li><svg class="who-for__icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11.5"/><path d="M20.5 11.5l-2.8 6.2-6.2 2.8 2.8-6.2Z"/></svg><strong>Explorers</strong><p>You have tried a lot, but asking for what you want still feels hard.</p></li>
+        <li><svg class="who-for__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M9 28V5.5A1.5 1.5 0 0 1 10.5 4h11A1.5 1.5 0 0 1 23 5.5V28"/><path d="M5 28h22"/><path d="M19 16.5v.5"/></svg><strong>Newcomers</strong><p>Your first honest conversation about desire, made easy.</p></li>
+        <li><svg class="who-for__icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="12" cy="13" r="6.5"/><circle cx="20" cy="13" r="6.5"/><circle cx="16" cy="20" r="6.5"/></svg><strong>Poly and open constellations</strong><p>Align wants, needs and boundaries, without the endless meeting.</p></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -317,7 +593,7 @@ input:focus,textarea:focus{border-color:var(--amber)}
       </li>
       <li>
         <svg class="steps__icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="4" width="16" height="24" rx="2.5"/><path d="M12.5 12.5l7 7M19.5 12.5l-7 7"/></svg>
-        <strong>Remove the allergies</strong>
+        <strong>Remove the sensitivities</strong>
         <p>Each couple gets a deck of fantasy cards, each card one ingredient for a sexy date: a place, an activity, a tool. Whatever is not for you gets discarded.</p>
       </li>
       <li>
@@ -376,7 +652,7 @@ input:focus,textarea:focus{border-color:var(--amber)}
       <p>We want couples to keep their relationship exciting, years in. The game is also practice for something bigger. Recognising your feelings and boundaries, saying what you want truthfully, and listening to others with curiosity and compassion are skills that will make this world a better place to live in for all.</p>
     </div>
     <figure class="photo reveal">
-      <img src="images/together.jpg" alt="Viktor and Rebecca laughing, Rebecca leaning back in his arms and looking up at him" width="600" height="540" loading="lazy">
+      <img src="images/story-restaurant.jpg" alt="Viktor and Rebecca at a restaurant table in warm evening light, holding hands and smiling at each other" width="810" height="540" loading="lazy">
     </figure>
     </div>
 
