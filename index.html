@@ -507,6 +507,33 @@ html[data-hero="r3-horizon"] .hero__reassure{color:#2A1A20}
   html[data-hero="r3-soft"] .hero__deco i:first-child{width:120%;height:48%;top:-6%;bottom:auto}
   html[data-hero="r3-horizon"] .hero__deco i:first-child{height:20%}
 }
+
+/* ============================================================
+   WARM PAGE: cream base, recurring sunset glow, sunset booking section
+   ============================================================ */
+html[data-pal]{--paper:#FFF8F1;--paper-warm:#FFF8F1;--paper-deep:#FFF8F1}
+html[data-pal] body{background:#FFF8F1}
+html[data-pal] .nav{background:rgba(255,248,241,.95)}
+html[data-pal] .section--warm{background:
+  radial-gradient(50% 60% at 4% 10%,rgba(255,196,120,.22),transparent 70%),
+  radial-gradient(45% 55% at 96% 30%,rgba(255,111,163,.12),transparent 70%),
+  radial-gradient(50% 60% at 70% 105%,rgba(255,122,43,.14),transparent 70%),#FFF8F1}
+html[data-pal] .who-for__list li{background:#FFFFFF;border:1px solid #F0E6DC}
+html[data-pal] .steps li, html[data-pal] blockquote, html[data-pal] .card{border-color:#F0E6DC}
+
+/* booking section: the sunset block, white text */
+html[data-pal] #book{background:linear-gradient(200deg,#FF8A3D 0%,#E8456F 50%,#B42A62 100%)}
+html[data-pal] #book h2, html[data-pal] #book p, html[data-pal] #book label{color:#FFFFFF}
+html[data-pal] #book .eyebrow{color:#FFE3C7}
+html[data-pal] #book .eyebrow::after{background:rgba(255,255,255,.4)}
+html[data-pal] #book .consent label{color:#FFF1F4}
+html[data-pal] #book .fineprint{color:rgba(255,255,255,.82)}
+html[data-pal] #book .form .btn{background:#111214;color:#FFFFFF}
+html[data-pal] #book .form .btn:hover{background:#2A2A2E}
+html[data-pal] #book input, html[data-pal] #book textarea{background:#FFFFFF;border-color:transparent}
+html[data-pal] #book input:focus, html[data-pal] #book textarea:focus{border-color:#111214}
+html[data-pal] .game-banner{background:#FDEBDD}
+html[data-pal] .footer{background:#2A1A24}
 </style>
 </head>
 <body>
@@ -664,7 +691,7 @@ html[data-hero="r3-horizon"] .hero__reassure{color:#2A1A20}
         </div>
       </div>
       <div class="bio reveal">
-        <!-- REBECCA'S PHOTO: upload a square photo to images/rebecca.jpg and it appears here on its own. Until then this slot hides itself. -->
+        <!-- REBECCA'S PHOTO: images/rebecca-face.jpg. If the file is missing, this slot hides itself. -->
         <img class="bio__photo" src="images/rebecca-face.jpg" alt="Rebecca Langley Jensen" width="104" height="104" onerror="this.parentElement.classList.add('bio--nophoto');this.remove()">
         <div>
           <h3>Rebecca Langley Jensen</h3>
